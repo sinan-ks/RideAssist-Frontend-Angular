@@ -1,0 +1,28 @@
+<!-- <pre>{{work|json}}</pre> -->
+
+<table class="table mt-5">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Action</th>
+    </tr>
+
+    <tbody>
+        <tr *ngFor="let work of works">
+            <td>{{work.title}}</td>
+            <td>{{work.description}}</td>
+            <td><span class="me-2"><i class="fa-solid fa-indian-rupee-sign"></i></span>{{work.amount}}</td>
+            <td>
+                <button class="btn btn-secondary me-1">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td class="text-end"><span class="fw-bold">Total</span> : </td>
+            <td><span class="me-2"><i class="fa-solid fa-indian-rupee-sign"></i></span>{{total}}</td>
+        </tr>
+    </tbody>
+</table>
